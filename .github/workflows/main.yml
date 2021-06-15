@@ -12,7 +12,7 @@ env:
   
 jobs:
   build:
-    name: 构建,发布
+    name: 执行Linux指令
     runs-on: ubuntu-latest # use latest ubuntu to run the job
     steps:
       - uses: actions/checkout@v2
@@ -24,4 +24,5 @@ jobs:
         run: ls -a
       - name: grep
         run: python -u grep.py
-   
+      - name: find
+        run: python -u find.py

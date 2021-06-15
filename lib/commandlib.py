@@ -3,7 +3,7 @@ import os
 def read_command_file(filename):
     inputfile = open(filename, "r", encoding="utf-8")
     lines = list(inputfile.readlines())
-    result = [line for line in lines if(len(str(line)) > 0 and not str(line).startswith("#"))]
+    result = [line for line in lines if(len(str(line).strip()) > 0 and not str(line).startswith("#"))]
     return result
 
 def execute_command(filename):
