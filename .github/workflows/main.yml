@@ -23,5 +23,5 @@ jobs:
       - name: Show files
         run: ls -a
       - name: grep
-        run: python grep.py
+        run: python -u grep.py
    
