@@ -4,4 +4,4 @@ sys.path.append("..")
 #sys.path.append("..")
 from lib  import commandlib
 
-commandlib.execute_command("./grep/grep_training.sh")
+commandlib.execute_command("grep_training.sh")

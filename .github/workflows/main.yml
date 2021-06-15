@@ -22,8 +22,6 @@ jobs:
           python-version: 3.8
       - name: Show files
         run: ls -a
-      - name: Show files
-        run: ls -a
       - name: grep
         run: cd ./grep && python grep.py
    
