@@ -1,4 +1,5 @@
 import os
+import time
 
 def read_command_file(filename):
     inputfile = open(filename, "r", encoding="utf-8")
@@ -12,4 +13,6 @@ def execute_command(filename):
         print("command:", line)
         res = os.system(line)
         print("-------------"*5)
+        time.sleep(0.1)
+
 
